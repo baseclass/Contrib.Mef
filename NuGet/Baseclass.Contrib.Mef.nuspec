@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Baseclass.Contrib.Mef</id>
+    <version>0.0.1</version>
+    <title>Baseclass.Contrib.Mef</title>
+    <authors>baseclass</authors>
+    <owners>baseclass</owners>
+    <description>
+      Library containing additional classes to work with MEF.
+    </description>
+    <releaseNotes>
+      - AssemblyFilteredDirectoryCatalog: A catalog which searches for parts in a directory, allows filtering by a file pattern and IAssemblyNameCriteria.
+      - PublicKeyAssemblyNameCriterion: Filters by a specific public key.
+      - PublisherAssemblyNameCriterion: Filters by the publisher (DigitalSignature).
+    </releaseNotes>
+    <summary>
+      Library containing additional class to work with MEF.
+
+      - AssemblyFilteredDirectoryCatalog: A catalog which searches for parts in a directory, allows filtering by a file pattern and IAssemblyNameCriteria.
+      - PublicKeyAssemblyNameCriterion: Filters by a specific public key.
+      - PublisherAssemblyNameCriterion: Filters by the publisher (DigitalSignature).
+    </summary>
+    <language>en-US</language>
+    <projectUrl>http://www.baseclass.ch</projectUrl>
+    <licenseUrl>https://raw.github.com/baseclass/Contrib.Mef/master/LICENSE</licenseUrl>
+    <copyright>Copyright  2013</copyright>
+    <dependencies>
+        <dependency id="Mono.Security" version="3.2.3.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.Composition" />
+    </frameworkAssemblies>
+    <tags>MEF Catalog DirectoryCatalog</tags>
+  </metadata>
+  <files>
+    <file src="..\Baseclass.Contrib.Mef\bin\Release\Baseclass.Contrib.Mef.dll" target="lib\net45\Baseclass.Contrib.Mef.dll" />
+    <file src="..\Baseclass.Contrib.Mef.40\bin\Release\Baseclass.Contrib.Mef.dll" target="lib\net40\Baseclass.Contrib.Mef.dll" />
+  </files>
+</package>
